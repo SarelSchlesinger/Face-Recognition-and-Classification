@@ -4,7 +4,7 @@ def Quality_Analysis(dictionary):
         if lst[0][0] == 'good':
             return 'Your picture is good!'
         else:
-            return f'Improve your picture. The problem is {lst[0][0]}.'
+            return f'Improve your picture. The problem is: {lst[0][0]}.'
     elif lst[0][1] <= 35:
         return f'We are not sure if your picture is good or not. Please upload new picture.'
     else:
@@ -12,6 +12,6 @@ def Quality_Analysis(dictionary):
             if lst[0][0] == 'good':
                 return 'Your picture is good!'
             else:
-                return f'Improve your picture. The problem is {lst[0][0]}.'
+                return f'Improve your picture. The problem is: {lst[0][0]}.'
         else:
             return f'We are not sure if your picture is good or not. Please upload new picture.'
