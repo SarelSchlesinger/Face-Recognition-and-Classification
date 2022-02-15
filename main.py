@@ -5,7 +5,7 @@ from PIL import Image
 from autocrop import Cropper
 from Quality_Analysis import *
 
-modelPath = "model2.tflite"
+modelPath = "model.tflite"
 interpreter = tf.lite.Interpreter(modelPath)
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
@@ -51,4 +51,4 @@ def imageProcessing(imagePath):
     return Quality_Analysis(output_dict)
 
 
-print(imageProcessing(r"C:\Users\User\Pictures\Camera Roll\WIN_20220209_20_58_06_Pro.jpg"))
+print(imageProcessing(r"C:\Users\User\Pictures\WIN_20220209_20_58_06_Pro.jpg"))
